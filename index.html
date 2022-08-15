@@ -7,17 +7,31 @@
     <meta name="description" content="Ejercicio numero 3 del practico numero 5 de javascript">
     <meta name="keywords" content="Bom , Dom , JavaScript">
     <meta name="author" content="Gonzalo Gallardo">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Ejercicio 3</title>
 </head>
 <body>
-    <header>
-
+    <header class="text-center colorHeader py-4">
+        <h3>Trabajo practico numero 5</h3>
+        <h5>Ejercicio 3</h5>
     </header>
-    <main>
-
+    <main class="">
+        <section class="bg-warning">
+            <div class="text-center">
+                <h3>Cree una nota</h3>
+            </div>
+            <form onsubmit="nuevaTarea(event)">
+                <input type="text" placeholder="Nueva tarea" autocomplete="off" name="tareasNuevas">
+                <button type="submit" class="agregarTareas">Agregar tarea</button>
+            </form>
+            <div id="contenedor"></div>
+        </section>
     </main>
   <footer>
-    
+
   </footer>  
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="/js/app.js"></script>
 </body>
 </html>
